@@ -31,7 +31,7 @@ namespace Utils
     void GetArgument(const std::string& name, T& result) const
     {
       const std::string value = GetArgument(name);
-      Utils::FromString<T>(value, result);
+      Utils::FromString(value, result);
     }
 
     template <typename T>
